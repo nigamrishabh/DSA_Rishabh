@@ -1,19 +1,18 @@
-package com.rishabh.dsa;
-
-import java.util.Arrays;
+package com.rishabh.dsa.string;
 
 public class ReverseString {
     public static void main(String[] args) {
 
-        char[] str = {'r','i','s','h'};
+        char[] str = {'r', 'i', 's', 'h'};
         reverseString(str);
     }
+
     public static void reverseString(char[] s) {
 
         char temp;
-            int i = 0;
-            int j = s.length-1;
-            while(i<j){
+        int i = 0;
+        int j = s.length - 1;
+        while (i < j) {
             temp = s[i];
             s[i] = s[j];
             s[j] = temp;
